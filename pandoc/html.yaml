@@ -1,0 +1,21 @@
+from: markdown+smart+fenced_divs+bracketed_spans+footnotes
+to: html5
+standalone: true
+embed-resources: false
+css:
+  - styles/book.css
+metadata:
+  title: "Computing and AI Ethics"
+  author: "[Author Name]"
+  lang: en
+csl: refs/chicago-author-date.csl
+bibliography:
+  - refs/references.bib
+citeproc: true
+toc: true
+toc-depth: 3
+number-sections: true
+section-divs: true
+reference-location: section
+include-in-header:
+  - templates/mermaid-init.html

@@ -1,0 +1,17 @@
+from: markdown+smart+fenced_divs+bracketed_spans+footnotes
+to: epub3
+standalone: true
+css:
+  - styles/book.css
+metadata:
+  title: "Computing and AI Ethics"
+  author: "[Author Name]"
+  lang: en
+csl: refs/chicago-author-date.csl
+bibliography:
+  - refs/references.bib
+citeproc: true
+toc: true
+toc-depth: 3
+number-sections: true
+reference-location: section

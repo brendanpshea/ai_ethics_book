@@ -1,0 +1,16 @@
+{
+  "name": "ai_ethics_book",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Computing and AI ethics textbook build tooling",
+  "scripts": {
+    "lint": "markdownlint-cli2 '**/*.md'",
+    "build:html": "./scripts/build-html.sh",
+    "build:epub": "./scripts/build-epub.sh",
+    "build": "npm run lint && npm run build:html"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.18.1",
+    "pandoc-bin": "^0.2.0"
+  }
+}
