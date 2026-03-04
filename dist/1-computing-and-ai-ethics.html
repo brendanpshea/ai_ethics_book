@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Brendan Shea, PhD" />
+  <title>Computing and AI Ethics</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles/book.css" />
+  <script src="assets/vendor/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      if (!window.mermaid) {
+        return;
+      }
+
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "base",
+        securityLevel: "loose",
+        themeVariables: {
+          primaryColor: "#DBEAFE",
+          primaryBorderColor: "#2563EB",
+          primaryTextColor: "#1E3A5F",
+          lineColor: "#6B7280",
+          secondaryColor: "#EFF6FF",
+          tertiaryColor: "#F0F9FF",
+          edgeLabelBackground: "#FFFFFF"
+        }
+      });
+
+      const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");
+      for (const block of blocks) {
+        const source = block.textContent || "";
+        try {
+          await mermaid.parse(source);
+        } catch (error) {
+          block.classList.add("mermaid-error");
+          const message = document.createElement("div");
+          message.className = "mermaid-error-message";
+          message.textContent = `Mermaid syntax error: ${error?.message || error}`;
+          block.insertAdjacentElement("afterend", message);
+        }
+      }
+
+      await mermaid.run({ querySelector: "pre.mermaid, div.mermaid" });
+    });
+  </script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Computing and AI Ethics</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Computing and AI Ethics</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="2-chapter-01-a-short-history-of-it-ethics.html" accesskey="n" rel="next">Chapter 01: A Short History of IT Ethics</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="index.html" accesskey="p" rel="previous">Computing and AI Ethics</a>
+</span>
+</div>
+</nav>
+<section id="computing-and-ai-ethics" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span>
+Computing and AI Ethics</h1>
+<div class="title-page">
+<div class="book-title-block">
+<p class="book-title">
+Computing and AI Ethics
+</p>
+<p class="book-subtitle">
+A Textbook for High School and Early College
+</p>
+<p class="book-author">
+Brendan Shea, PhD
+</p>
+<p class="book-institution">
+Rochester Community and Technical College
+</p>
+<p class="book-year">
+2026
+</p>
+</div>
+<div class="book-license">
+<p>This work is licensed under a <a
+href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative
+Commons Attribution–NonCommercial–ShareAlike 4.0 International
+License</a>.</p>
+<p><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png"
+alt="CC BY-NC-SA 4.0" /></a></p>
+<p><strong>You are free to:</strong></p>
+<ul>
+<li><strong>Share</strong> — copy and redistribute the material in any
+medium or format</li>
+<li><strong>Adapt</strong> — remix, transform, and build upon the
+material</li>
+</ul>
+<p><strong>Under the following terms:</strong></p>
+<ul>
+<li><strong>Attribution</strong> — You must give appropriate credit,
+provide a link to the license, and indicate if changes were made.</li>
+<li><strong>NonCommercial</strong> — You may not use the material for
+commercial purposes.</li>
+<li><strong>ShareAlike</strong> — If you remix, transform, or build upon
+the material, you must distribute your contributions under the same
+license.</li>
+</ul>
+</div>
+</div>
+</section>
+</body>
+</html>

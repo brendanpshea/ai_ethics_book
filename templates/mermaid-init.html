@@ -7,8 +7,17 @@
 
     mermaid.initialize({
       startOnLoad: false,
-      theme: "default",
-      securityLevel: "loose"
+      theme: "base",
+      securityLevel: "loose",
+      themeVariables: {
+        primaryColor: "#DBEAFE",
+        primaryBorderColor: "#2563EB",
+        primaryTextColor: "#1E3A5F",
+        lineColor: "#6B7280",
+        secondaryColor: "#EFF6FF",
+        tertiaryColor: "#F0F9FF",
+        edgeLabelBackground: "#FFFFFF"
+      }
     });
 
     const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");

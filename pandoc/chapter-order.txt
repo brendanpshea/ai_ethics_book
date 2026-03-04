@@ -1,2 +1,4 @@
+chapters/00-title.md
 chapters/01-what-is-computing-and-ai-ethics.md
 chapters/02-technology-and-the-virtues.md
+chapters/03-free-speech-and-the-digital-public-square.md

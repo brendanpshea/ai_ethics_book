@@ -182,6 +182,11 @@ The **Thirty Years' War** (1618--1648) is the most direct catastrophic consequen
 
 None of this means printing was a mistake. The Scientific Revolution, the spread of literacy, the weakening of autocratic religious authority---these are genuine moral goods. But they arrived alongside mass death, persecution, and the weaponization of information at a scale the world had not seen before. That combination is not accidental. It is the recurring pattern.
 
+<figure>
+  <img src="../assets/images/wikimedia/printing-press.jpg" alt="A replica of an early European printing press in a printing museum." />
+  <figcaption>A replica of a Gutenberg-era flatbed printing press at a printing museum. Early presses could produce roughly 250 pages per hour---a revolutionary speed compared to hand-copying. The same mechanism that spread the Scriptures, science, and literacy across Europe also spread antisemitic tracts, witch-hunting manuals, and war propaganda at a scale manuscript culture could never have achieved. Public domain (Wikimedia Commons).</figcaption>
+</figure>
+
 | Printing Press Benefit | Printing Press Cost |
 |---|---|
 | Scientific Revolution and cumulative scholarship | *Malleus Maleficarum* and 40,000--60,000 witch executions |
@@ -225,28 +230,18 @@ But the same infrastructure that connected families also connected empires. Brit
 
 Closer to home, the telegraph killed the **Pony Express** in 1861. The company had operated for only eighteen months when the first transcontinental telegraph line was completed---and shut down the same day. Two thousand horses, hundreds of relay stations, and roughly eighty riders lost their livelihoods overnight. The Pony Express is remembered as romantic adventure; it was also a rapid case of technological unemployment, an entire industry eliminated faster than any retraining program could respond.
 
+<figure>
+  <img src="../assets/images/wikimedia/telegraph-key.jpg" alt="Victorian telegraph key and relay instrument, 1860s." />
+  <figcaption>A Victorian-era telegraph key and relay instrument, c. 1860s. Public domain (Wikimedia Commons). Instruments like this connected continents---but the infrastructure they ran on was owned and controlled by governments and large corporations, not ordinary citizens.</figcaption>
+</figure>
+
 These two sets of facts---liberation and consolidation---are the core tension that **John Stuart Mill** and **Karl Marx** help us think through. Mill, writing in the 1850s, argued that free expression should be nearly absolute: even wrong ideas deserve a hearing, because truth becomes clear only when tested against opposition [@mill1859liberty]. From Mill's perspective, the telegraph was a tool of freedom---more voices, more exchange, more challenges to established authority.
 
 > "If all mankind minus one, were of one opinion, and only one person were of the contrary opinion, mankind would be no more justified in silencing that one person, than he, if he had the power, would be justified in silencing mankind."
 >
 > --- John Stuart Mill, *On Liberty* (as quoted on Wikiquote: https://en.wikiquote.org/wiki/On_Liberty)
 
-<figure>
-  <img src="../assets/images/wikimedia/john-stuart-mill.jpg" alt="Portrait photograph of John Stuart Mill, c. 1870, by the London Stereoscopic Company." />
-  <figcaption>John Stuart Mill, photographed by the London Stereoscopic Company, c. 1870. Public domain (Wikimedia Commons).</figcaption>
-</figure>
-
-::: {.famous-figure}
-**John Stuart Mill (1806–1873)**
-
-John Stuart Mill was a British philosopher, political economist, and utilitarian thinker---the most influential defender of classical liberalism in the English-speaking tradition. Educated by his father from age three (reading Greek before age four), he spent most of his professional life at the East India Company while writing foundational texts on logic, economics, and political philosophy.
-
-His essay *On Liberty* (1859) offers the most famous modern defense of free expression: even false ideas contribute to epistemic progress, because defending truth against error requires that defenders articulate their actual reasoning. Mill assumed a competitive "marketplace of ideas" in which weaker arguments eventually lose.
-
-*Key works:* *On Liberty* (1859), *Utilitarianism* (1863), *The Subjection of Women* (1869), *A System of Logic* (1843)
-
-*Relevance to IT ethics:* Mill's harm principle and marketplace-of-ideas argument underlie most defenses of minimal content moderation. Critics contend his model assumes rough parity among speakers---an assumption shattered by platforms that can amplify one voice to billions at zero marginal cost.
-:::
+Mill's framework---a "marketplace of ideas" in which even false claims contribute to the search for truth---is the foundation of classical liberal free-speech arguments. We will examine Mill in depth in Chapter 3, where his argument finds its natural home in debates about content moderation and the digital public square. For the contrast this chapter needs, what matters is what Mill *does not* ask: who owns the marketplace.
 
 **Karl Marx** and **Friedrich Engels** would ask: who owns the cables [@marx1978germanideology]? Formal freedom of expression means little if the infrastructure is controlled by a government or corporation that decides whose messages get through, at what price, and to whom. Telegraph lines were owned by private companies in the United States and by colonial governments in the British Empire. Access was priced out of reach for most people. "Free communication" was free primarily for those who could afford it.
 
@@ -317,6 +312,11 @@ Question: What happens when one voice can reach every home at once?
 :::
 
 On January 30, 1933, Adolf Hitler became Chancellor of Germany. Within weeks, his propaganda minister **Joseph Goebbels** had taken control of every radio station in the country. In 1928, there were 3 million radio receivers in Germany. By 1939, there were 16 million---one in nearly every household. The Nazi government subsidized cheap radios called *Volksempfänger* ("people's receivers") specifically to maximize reach. Radio became the primary instrument of a regime that dismantled democracy, scapegoated minorities, and murdered six million Jewish people and millions of others.
+
+<figure>
+  <img src="../assets/images/wikimedia/volksempfaenger.jpg" alt="A Volksempfänger VE 301 radio receiver, manufactured from 1933 onward." />
+  <figcaption>A <em>Volksempfänger</em> VE 301 radio receiver. The Nazi government subsidized mass production of these inexpensive sets beginning in 1933 to ensure that Goebbels's broadcasts reached every German household. By 1939, Germany had the highest per-capita radio ownership in the world. Public domain (Wikimedia Commons).</figcaption>
+</figure>
 
 This was not an accident of technology. It was a deliberate exploitation of a structural feature of broadcast media: **one-to-many communication**. A printing press requires someone to read. Reading is active, involves individual judgment, and can be done privately. Radio arrives in real time, in the listener's home, in a human voice---the voice of authority. It can reach an entire population simultaneously. It is very difficult to argue back against.
 

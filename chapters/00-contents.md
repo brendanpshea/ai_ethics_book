@@ -11,21 +11,22 @@ This is the living contents file. Update chapter and subsection titles as the pr
 5. Why did Orwell and Arendt treat mass media as politically dangerous?
 6. How should this history shape AI ethics now?
 
-## Chapter 02: A Short History of Technology Ethics
+## Chapter 02: Technology and the Virtues
 
-1. What ethical concerns emerged in early computing?
-2. How did professional codes of ethics develop?
-3. Which historical failures reshaped public expectations?
-4. How did internet platforms transform ethical risk?
-5. What lessons from IT ethics apply directly to AI today?
+1. What does it mean to live a "good life"?
+2. Are there other ways to think about virtue?
+3. Do our devices make us shallow, isolated, and anxious?
+4. What is the danger of enforcing "the Good"?
+5. Are the "virtues" just tools for conformity?
 
-## Chapter 03: Moral Frameworks for Technical Decisions
+## Chapter 03: Free Speech, Censorship, and the Digital Public Square
 
-1. How does utilitarian thinking evaluate AI outcomes?
-2. What does deontology demand in system design?
-3. How does virtue ethics change the focus of analysis?
-4. What can care ethics add to technical governance?
-5. How can plural ethical frameworks be used together?
+1. Why does free speech matter in the first place?
+2. Who threatens free speech---and how?
+3. What speech is not protected---and why not?
+4. What can radio and television teach us about governing new media?
+5. What is Section 230, and why does everyone want to change it?
+6. What happens when AI becomes the gatekeeper of speech?
 
 ## Chapter 04: Power, Inequality, and Global Context
 

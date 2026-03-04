@@ -6,7 +6,7 @@ css:
   - styles/book.css
 metadata:
   title: "Computing and AI Ethics"
-  author: "[Author Name]"
+  author: "Brendan Shea, PhD"
   lang: en
 csl: refs/chicago-author-date.csl
 bibliography:
@@ -16,6 +16,6 @@ toc: true
 toc-depth: 3
 number-sections: true
 section-divs: true
-reference-location: section
+reference-location: document
 include-in-header:
   - templates/mermaid-init.html
