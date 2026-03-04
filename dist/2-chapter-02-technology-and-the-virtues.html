@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Author Name]" />
+  <title>Chapter 02: Technology and the Virtues</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging-indent div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }  </style>
+  <link rel="stylesheet" href="styles/book.css" />
+  <script src="assets/vendor/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      if (!window.mermaid) {
+        return;
+      }
+
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "default",
+        securityLevel: "loose"
+      });
+
+      const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");
+      for (const block of blocks) {
+        const source = block.textContent || "";
+        try {
+          await mermaid.parse(source);
+        } catch (error) {
+          block.classList.add("mermaid-error");
+          const message = document.createElement("div");
+          message.className = "mermaid-error-message";
+          message.textContent = `Mermaid syntax error: ${error?.message || error}`;
+          block.insertAdjacentElement("afterend", message);
+        }
+      }
+
+      await mermaid.run({ querySelector: "pre.mermaid, div.mermaid" });
+    });
+  </script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Up:</span> <a href="index.html" accesskey="u" rel="up">Computing and AI Ethics</a>
+</span>
+<span class="navlink">
+<span class="navlink-label">Top:</span> <a href="index.html" accesskey="t" rel="top">Computing and AI Ethics</a>
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+</span>
+<span class="navlink">
+<span class="navlink-label">Previous:</span> <a href="1-chapter-01-a-short-history-of-it-ethics.html" accesskey="p" rel="previous">Chapter 01: A Short History of IT Ethics</a>
+</span>
+</div>
+</nav>
+<section id="chapter-02-technology-and-the-virtues" class="level1"
+data-number="2">
+<h1 data-number="2"><span class="header-section-number">2</span> Chapter
+02: Technology and the Virtues</h1>
+<section id="learning-outcomes-1" class="level2" data-number="2.1">
+<h2 data-number="2.1"><span class="header-section-number">2.1</span>
+Learning Outcomes</h2>
+<div class="learning-outcomes">
+<p>By the end of this chapter, readers will be able to:</p>
+<ul>
+<li>Explain the core concepts of Aristotelian virtue ethics, including
+<em>eudaimonia</em> and the doctrine of the mean.</li>
+<li>Compare Aristotelian virtue with alternative traditions, including
+Buddhist, Confucian, and Care ethics.</li>
+<li>Apply virtue ethics to the design and use of modern information
+technology, including smartphones, social media, and AI.</li>
+<li>Evaluate arguments that commercial IT infrastructure actively
+degrades human virtue.</li>
+<li>Analyze liberal and Nietzschean criticisms of virtue ethics in the
+context of technology governance.</li>
+</ul>
+</div>
+</section>
+<section id="essential-question-1" class="level2" data-number="2.2">
+<h2 data-number="2.2"><span class="header-section-number">2.2</span>
+Essential Question</h2>
+<div class="essential-question">
+<p>Does modern technology help us become better versions of ourselves,
+or does it erode the character traits required for a good life?</p>
+</div>
+</section>
+<section id="what-does-it-mean-to-live-a-good-life" class="level2"
+data-number="2.3">
+<h2 data-number="2.3"><span class="header-section-number">2.3</span>
+What does it mean to live a “Good Life”?</h2>
+<div class="section-question">
+<p>Question: How does virtue ethics shift the moral focus from following
+rules to building habits?</p>
+</div>
+<p>Most of the time, when people think about computing ethics or AI
+governance, they ask questions about rules: “Is it legal to scrape this
+data?” or “What are the company’s guidelines on hate speech?” These are
+incredibly important questions, but they represent only one way of
+thinking about morality. An entirely different—and much older—approach
+asks not “What are the rules?” but rather “Who am I becoming?” This is
+the core of <strong>virtue ethics</strong>.</p>
+<p>Virtue ethics is not concerned primarily with isolated actions or
+rigid commandments. Instead, it asks whether our environments, our
+communities, and our daily habits are molding us into excellent humans.
+While this concept appears in many global traditions, its most famous
+Western formulation comes from <strong>Aristotle</strong> in ancient
+Greece.</p>
+<figure>
+<img src="../assets/images/wikimedia/aristotle.jpg" alt="Marble bust of Aristotle" />
+<figcaption>
+Marble bust of Aristotle. Roman copy after a Greek bronze original.
+National Roman Museum. Public domain (Wikimedia Commons).
+</figcaption>
+</figure>
+<p>Aristotle argued that everything in the universe has a
+<em>telos</em>—a purpose or ultimate goal. The <em>telos</em> of an
+acorn is to become an oak tree. The <em>telos</em> of a knife is to cut
+sharply. What, then, is the <em>telos</em> of a human being? Aristotle
+answered that the ultimate goal of human life is
+<strong><em>eudaimonia</em></strong>, often cheaply translated as
+“happiness,” but much more accurately understood as “human flourishing,”
+“thriving,” or “living well.”</p>
+<p>To reach <em>eudaimonia</em>, one must cultivate <em>arete</em>,
+which means “excellence” or “virtue.” In the Aristotelian framework,
+virtues are excellent traits of character—like courage, honesty,
+temperance, and patience—that allow a person to navigate life’s
+challenges well.</p>
+<div class="famous-figure">
+<p><strong>Aristotle (384–322 BCE)</strong></p>
+<p>A towering figure of ancient Greek philosophy, a student of Plato,
+and the tutor of Alexander the Great. Aristotle’s work laid the
+foundation for formal logic, biology, aesthetics, and ethics in the
+Western tradition.</p>
+<blockquote>
+<p>“The virtues we get by first exercising them, as also happens in the
+case of the arts as well. For the things we have to learn before we can
+do them, we learn by doing them… we become just by doing just acts,
+temperate by doing temperate acts, brave by doing brave acts.”</p>
+<p>— Aristotle, <em>Nicomachean Ethics</em>, Book II (1103a-b)</p>
+</blockquote>
+<p><em>Key works:</em> <em>Nicomachean Ethics</em>, <em>Politics</em>,
+<em>Poetics</em>, <em>Metaphysics</em></p>
+<p><em>Relevance to IT ethics:</em> Aristotle established the framework
+of virtue ethics, emphasizing that character is built purely through
+habitual action. Applied to tech, his ideas suggest that our daily
+digital habits—scrolling, posting, prompting AI—are a literal form of
+moral training that slowly but permanently shapes who we become.</p>
+</div>
+<p>Crucially, Aristotle proposed that virtues are not inborn; they are
+acquired strictly through practice. Ethics is not like algebra, where
+you simply memorize a formula. It is more like learning to play the
+flute. You don’t become a musician by reading a book; you become a
+musician by practicing scales. We become brave by doing brave
+things.</p>
+<p>Furthermore, Aristotle introduced the <strong>doctrine of the
+mean</strong>: a virtue is generally the sweet spot, or the “golden
+mean,” between two opposing vices—one of excess and one of deficiency.
+For example: - <strong>Courage</strong> is the mean between cowardice
+(deficiency) and recklessness (excess). - <strong>Honesty</strong> is
+the mean between deception (deficiency) and brutal, tactless bluntness
+(excess). - <strong>Temperance</strong> is the mean between
+insensibility (deficiency) and overindulgence/addiction (excess).</p>
+<p>To hit this target requires <strong><em>phronesis</em></strong>, or
+“practical wisdom”—the ability to read a situation, understand context,
+and choose the right action at the right time. You cannot outsource
+<em>phronesis</em> to a rigid rulebook; you must develop it through
+lived experience.</p>
+<p>When we evaluate modern information technology through this lens, the
+conversation completely shifts. A virtue ethicist looking at a
+smartphone does not just ask “Is the software legally compliant?” They
+ask: “What habits is this device training its user to perform?”</p>
+<p>If virtues are habits formed by repeated action, spending four hours
+a day swiping through short-form video in a highly reactive, perpetually
+distracted state is not a morally neutral activity. It is active,
+rigorous conditioning.</p>
+<figure class="mermaid-figure">
+<pre class="mermaid">
+flowchart LR
+    A[Vice of Deficiency\nIsolation/Disconnection] --> B([Virtue:\nHealthy Connection])
+    C[Vice of Excess\nEnmeshment/Doomscrolling] --> B
+  </pre>
+<figcaption>
+Figure 1. The Aristotelian Doctrine of the Mean applied to digital
+connectivity.
+</figcaption>
+</figure>
+<p>Consider algorithms designed to maximize “time on site” by surfacing
+enraging content. These platforms pull users forcefully toward the vices
+of excess: extreme anger, enmeshment, and distraction. Through the lens
+of virtue ethics, a badly designed app does not just waste a user’s
+time. By repeatedly rewarding vicious habits, the technology actively
+makes the user a worse person. Similarly, if we constantly use GPS
+navigation platforms to route our walking without paying attention to
+the streets ourselves, we achieve our goal (arriving at the
+destination), but we sacrifice the opportunity to develop spatial
+<em>phronesis</em> (mental maps and navigational capacity). The tool
+performs the excellence so we don’t have to.</p>
+<div class="discussion-questions">
+<p><strong>Discussion</strong></p>
+<ol type="1">
+<li>If you had to identify the “golden mean” of smartphone use, what
+would it look like in your daily life? How much is too little, and how
+much is too much?</li>
+<li>Aristotle says we become brave by doing brave acts. If an AI
+assistant constantly writes uncomfortable emails or apologies for you,
+are you losing the capacity to practice courage?</li>
+<li>Do you think tech companies have a moral obligation to help users
+achieve <em>eudaimonia</em>, or is character-building out of scope for a
+corporation?</li>
+</ol>
+</div>
+</section>
+<section id="are-there-other-ways-to-think-about-virtue" class="level2"
+data-number="2.4">
+<h2 data-number="2.4"><span class="header-section-number">2.4</span> Are
+there other ways to think about virtue?</h2>
+<div class="section-question">
+<p>Question: How do Buddhist, Confucian, and Care ethics challenge or
+expand the Aristotelian idea of flourishing?</p>
+</div>
+<p>While Aristotle provides the foundational language for Western virtue
+ethics, many other global traditions also focus deeply on character and
+flourishing. However, they emphasize completely different virtues.
+Comparing these traditions reveals that “a good life” is not a
+universally agreed-upon concept. In fact, the specific virtues we need
+to navigate the hyper-connected digital world might be better sourced
+from traditions beyond ancient Athens.</p>
+<p><strong>Buddhist Ethics</strong> focuses extensively on the relief of
+suffering (<em>dukkha</em>). According to fundamental Buddhist
+teachings, suffering is the inevitable result of craving, clinging,
+attachment, and ignorance. To overcome this, practitioners cultivate
+specific states of character, centrally including
+<strong><em>sati</em></strong>, commonly translated as
+<strong>mindfulness</strong>—the capacity to remain fully present,
+aware, and non-reactive in the current moment <span class="citation"
+data-cites="keown2001nature">(Keown 2001)</span>.</p>
+<p>When applied to modern technology, a Buddhist ethical framework
+issues a devastating critique of the modern “attention economy.”
+Platforms that rely on push notifications, infinite scrolling, variable
+reward gamification, and targeted outrage are essentially industrial
+engines designed to manufacture craving and attachment. They train the
+mind into a constant state of restless desire for the next hit of
+dopamine or social validation. From a Buddhist perspective, cultivating
+mindfulness in an ecosystem specifically engineered to shatter your
+attention is not just difficult; it requires resisting the fundamental
+architecture of the internet.</p>
+<figure>
+<img src="../assets/images/wikimedia/confucius.jpg" alt="Portrait of Confucius" />
+<figcaption>
+Portrait of Confucius by an unknown artist. Public domain (Wikimedia
+Commons).
+</figcaption>
+</figure>
+<p><strong>Confucian Ethics</strong> places a much stronger emphasis on
+relational harmony, community duty, and tradition than Aristotle’s
+deeply individualistic focus on personal flourishing. For Confucius,
+human beings are fundamentally relational creatures. Ethics revolves
+around concepts like <strong><em>ren</em></strong> (humaneness,
+benevolence, or deep empathy between people) and
+<strong><em>li</em></strong> (ritual propriety, etiquette, and protocol)
+<span class="citation" data-cites="confucius2003analects">(Confucius
+2003)</span>.</p>
+<div class="famous-figure">
+<p><strong>Confucius (551–479 BCE)</strong></p>
+<p>A Chinese philosopher and politician whose teachings on personal and
+governmental morality, social relationships, and justice became the
+foundation of Chinese culture.</p>
+<blockquote>
+<p>“Guide them by edicts, keep them in line with punishments, and the
+common people will stay out of trouble but will have no sense of shame.
+Guide them by virtue, keep them in line with the rites (<em>li</em>),
+and they will, besides having a sense of shame, reform themselves.”</p>
+<p>— Confucius, <em>Analects</em> (2.3)</p>
+</blockquote>
+<p><em>Key works:</em> <em>The Analects</em> (compiled by followers)</p>
+<p><em>Relevance to IT ethics:</em> Confucius emphasizes that morality
+is maintained through <em>li</em>—rituals and etiquette that structure
+our interactions. Digital platforms often actively strip away polite
+rituals to speed up interactions, which a Confucian warns will rapidly
+devolve into social chaos and toxicity.</p>
+</div>
+<p>A Confucian approach to IT ethics would prioritize the health of the
+community and the preservation of respectful social rituals over radical
+individual free expression. For instance, the casual toxicity, flame
+wars, and harassment often enabled by online anonymity and rapid-fire
+replies are not just examples of individual rudeness. To a Confucian,
+they represent a catastrophic breakdown of <em>li</em>. Digital
+interfaces artificially strip away all the friction and formal etiquette
+of real-world interactions. By removing the rituals of respect, the
+software effectively guarantees that users will treat each other with
+cruelty, destroying the necessary social fabric that allows a community
+to survive.</p>
+<p><strong>Care Ethics</strong>, originating in feminist philosophy in
+the 20th century through thinkers like Carol Gilligan and Nel Noddings,
+rejects the idea that morality is about abstract rationality, universal
+rules, or even the isolated virtues of an individual. Instead, Care
+Ethics argues that humans are inherently interdependent from birth. The
+basic unit of morality is not the independent rational actor, but the
+active, vulnerable relationship of <em>caring</em> for specific others
+<span class="citation" data-cites="noddings2013caring">(Noddings
+2013)</span>.</p>
+<blockquote>
+<p>“The caring relation is ethically basic… I must first be addressed,
+open and receptive, to the other.” — Nel Noddings, <em>Caring: A
+Relational Approach to Ethics and Moral Education</em></p>
+</blockquote>
+<p>In tech ethics, a Care perspective is highly suspicious of systems
+that try to automate, scale, or outsource empathy. Genuine care requires
+friction; it requires recognizing the messy, demanding, and highly
+specific needs of a real human being.</p>
+<div class="case-study">
+<p><strong>Mini Case: The AI Companion</strong></p>
+<p>Millions of users now interact daily with AI chatbots like Replika or
+Character.ai, forming incredibly deep emotional attachments. For many
+lonely people, these systems provide vital comfort. They are programmed
+to always listen, never judge, and constantly validate the emotional
+state of the user. Because they are algorithms, they never get
+exhausted, they never get offended, and they never demand anything in
+return.</p>
+<p>However, evaluated through the lens of virtue ethics, this dynamic is
+highly concerning. From an Aristotelian perspective, true friendship
+(<em>philia</em>) requires “friction” to help both parties grow in
+virtue and challenge each other’s flaws. The AI never challenges
+you.</p>
+<p>From the perspective of Care Ethics, genuine care requires mutual
+vulnerability. Caring is not a one-way street of emotional service; it
+involves recognizing the profound, fragile humanity of an imperfect
+other and taking on the burden of their needs in return.</p>
+<p><em>Does an AI companion that never disagrees with you cultivate the
+virtue of empathy? Or does interacting with a perfectly subordinate
+digital servant build a vicious habit of expecting relationships to
+serve you unconditionally, without demanding any real vulnerability or
+compromise from you in return?</em></p>
+</div>
+<p>These comparative traditions show us that evaluating technology
+requires asking <em>which</em> virtues we care about most. Are we trying
+to build independent, courageous individuals (Aristotle), mindful and
+unattached observers (Buddhism), harmonious and polite community members
+(Confucius), or deeply empathetic relational caregivers (Care Ethics)?
+If we build tools that optimize for one, we may accidentally destroy the
+others.</p>
+<div class="discussion-questions">
+<p><strong>Discussion</strong></p>
+<ol type="1">
+<li>Which of these four traditions (Aristotelian, Buddhist, Confucian,
+Care) do you think best addresses the problems of modern social
+media?</li>
+<li>If you were designing a social network on Confucian principles, how
+would you change the “reply” or “comment” features?</li>
+</ol>
+</div>
+</section>
+<section id="do-our-devices-make-us-shallow-isolated-and-anxious"
+class="level2" data-number="2.5">
+<h2 data-number="2.5"><span class="header-section-number">2.5</span> Do
+our devices make us shallow, isolated, and anxious?</h2>
+<div class="section-question">
+<p>Question: How is commercial IT infrastructure actively changing human
+character?</p>
+</div>
+<p>If we accept the premise that our tools shape our habits, and our
+habits shape our character, then the design of modern information
+technology is a profound ethical issue. A growing chorus of
+philosophers, psychologists, and cultural critics argue that the
+predominant business model of the internet—extracting attention to sell
+advertising—is fundamentally incompatible with cultivating human
+virtue.</p>
+<p>The philosopher Shannon Vallor argues that humanity desperately needs
+to cultivate specific “technomoral virtues” to survive the coming
+century, but the tools we use often push us in the opposite direction
+<span class="citation" data-cites="vallor2016technology">(Vallor
+2016)</span>. Several prominent critics point out exactly how this
+erosion occurs:</p>
+<ul>
+<li><strong>The erosion of intellectual virtue:</strong> Nicholas Carr
+has argued that search engines and hyperlinks rewire our brains, making
+us incredibly efficient at skimming information but degrading our
+capacity for deep reading, sustained concentration, and patience <span
+class="citation" data-cites="carr2011shallows">(Carr 2011)</span>.</li>
+<li><strong>The erosion of conversational virtue:</strong> Sherry
+Turkle’s research explores how smartphones—always present, always
+offering an escape—degrade our ability to be fully present with one
+another. We sacrifice deep, vulnerable conversations for the low-stakes,
+highly controlled environment of text messaging <span class="citation"
+data-cites="turkle2015reclaiming">(Turkle 2015)</span>.</li>
+<li><strong>The erosion of psychological virtue:</strong> Jonathan Haidt
+argues that the sudden shift to a “phone-based childhood” has deprived
+young people of the risk-taking, independent play, and synchronized
+social friction necessary to develop courage and resilience, leading
+directly to a crisis of anxiety <span class="citation"
+data-cites="haidt2024anxious">(Haidt 2024)</span>.</li>
+</ul>
+<div class="argument">
+<p><strong>Argument: The Technological Erosion of Virtue</strong></p>
+<p><strong>Standard Form:</strong></p>
+<ol type="1">
+<li>The continuous development of virtues (like patience, empathy, and
+courage) requires friction, delayed gratification, and social risk.</li>
+<li>Commercial IT infrastructure (social media, AI assistants, search)
+is deliberately designed to remove friction, provide instant
+gratification, and insulate users from social risk.</li>
+<li>Therefore, regular engagement with commercial IT infrastructure
+actively degrades the development of human virtue.</li>
+</ol>
+<p><strong>Common Criticisms:</strong></p>
+<ul>
+<li><em>Technological Determinism:</em> This argument often ignores
+human agency. People can choose to use these tools mindfully and set
+their own boundaries.</li>
+<li><em>Blindness to new virtues:</em> While some traditional virtues
+may be challenged, technology allows for the cultivation of new virtues,
+such as global solidarity, rapid collaboration, and digital civic
+engagement.</li>
+<li><em>Romanticizing the past:</em> Critics often view the pre-digital
+era with rose-tinted glasses, ignoring how traditional “friction” often
+isolated vulnerable or marginalized individuals who now find community
+online.</li>
+</ul>
+</div>
+<table>
+<caption>How specific technical designs map to the erosion of
+traditional virtues.</caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>Traditional Virtue</th>
+<th>Anti-Virtuous Design Feature</th>
+<th>Resulting Digital Vice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Patience</td>
+<td>Infinite scroll, instant page loads</td>
+<td>Restlessness, immediate gratification</td>
+</tr>
+<tr>
+<td>Courage / Risk-taking</td>
+<td>Algorithmic filter bubbles</td>
+<td>Echo chambers, ideological fragility</td>
+</tr>
+<tr>
+<td>Empathy</td>
+<td>Anonymity, metric-driven outrage</td>
+<td>Trolling, dehumanization</td>
+</tr>
+<tr>
+<td>Mindfulness</td>
+<td>Push notifications, variable rewards</td>
+<td>Perpetual distraction, continuous partial attention</td>
+</tr>
+</tbody>
+</table>
+<p>These critiques bring the concepts of virtue ethics down to the level
+of UX design. If a platform’s goal is “time on site,” it will naturally
+optimize against moderation and patience.</p>
+</section>
+<section id="what-is-the-danger-of-enforcing-the-good" class="level2"
+data-number="2.6">
+<h2 data-number="2.6"><span class="header-section-number">2.6</span>
+What is the danger of enforcing “the Good”?</h2>
+<div class="section-question">
+<p>Question: Does designing technology to “make us virtuous” violate our
+fundamental freedoms?</p>
+</div>
+<p>If technology is degrading our character, the obvious solution seems
+to be redesigning technology to promote virtue. We could ban addictive
+infinite scrolls, force teenagers off platforms at bedtime to ensure
+healthy sleep, or design algorithms that hide polarizing content and
+expose us only to calm, educational material.</p>
+<p>But this solution runs head-first into a major political and
+philosophical critique: <strong>the liberal tradition</strong>, in the
+classical sense of focusing on individual liberty.</p>
+<div class="famous-figure">
+<p><strong>Isaiah Berlin (1909–1997)</strong></p>
+<p>A Russian-British philosopher and historian of ideas, Isaiah Berlin
+was one of the leading liberal thinkers of the 20th century. He is best
+known for his essay <em>Two Concepts of Liberty</em>.</p>
+<p><em>Key works:</em> <em>Two Concepts of Liberty</em>, <em>The
+Hedgehog and the Fox</em></p>
+<p><em>Relevance to IT ethics:</em> Berlin distinguishes between
+“negative liberty” (freedom from interference) and “positive liberty”
+(the freedom to fulfill one’s potential or ‘master’ oneself). His
+warnings about the dangers of authorities trying to enforce “positive
+liberty” are highly relevant to debates about paternalistic tech
+regulation.</p>
+</div>
+<p>In <em>Two Concepts of Liberty</em>, Isaiah Berlin made a crucial
+distinction <span class="citation" data-cites="berlin1969two">(Berlin
+1969)</span>: - <strong>Negative liberty</strong> is the freedom
+<em>from</em> external interference. You are free as long as nobody is
+actively stopping you from doing what you want. - <strong>Positive
+liberty</strong> is the freedom to be your “best self” or to achieve
+self-mastery.</p>
+<p>Virtue ethics is heavily aligned with positive liberty: it has a
+specific vision of <em>eudaimonia</em> and wants to help you achieve it.
+However, Berlin warned that focusing on positive liberty easily turns
+into terrifying paternalism. When a government (or a tech monopoly)
+decides it knows what your “best self” looks like, it will often justify
+coercing, manipulating, or forcing you to conform to that vision “for
+your own good.”</p>
+<p>If we apply this to technology, the liberal critic asks: <em>Who gets
+to decide what counts as a virtual digital life?</em> Do we really want
+Mark Zuckerberg, Elon Musk, or government regulators deciding what
+content builds our “character”? According to classical liberals, the
+state’s (and perhaps the platform’s) only job is to protect negative
+liberty—to prevent users from directly harming one another (echoing John
+Stuart Mill’s harm principle discussed in Chapter 1). It is not their
+job to engineer our souls.</p>
+<p>Designing an app to “make you a better person” assumes the designer’s
+definition of “better” is universally true. To a liberal critic,
+“digital wellness” algorithms and “AI safety” alignment are dangerously
+close to authoritarian moral engineering.</p>
+<div class="discussion-questions">
+<p><strong>Discussion</strong></p>
+<ol type="1">
+<li>If a social media company implements a mandatory “bedtime” shutdown
+for teenage users to enforce healthy sleep habits, is this a
+praiseworthy cultivation of virtue or an unacceptable violation of
+negative liberty?</li>
+<li>Can a technology ever be truly “neutral” regarding character, or is
+it always making us better or worse?</li>
+</ol>
+</div>
+</section>
+<section id="are-the-virtues-just-tools-for-conformity" class="level2"
+data-number="2.7">
+<h2 data-number="2.7"><span class="header-section-number">2.7</span> Are
+the “virtues” just tools for conformity?</h2>
+<div class="section-question">
+<p>Question: What if the things we call “virtues” are actually just
+control mechanisms?</p>
+</div>
+<p>There is an even more radical critique of virtue ethics than the
+liberal one, and it comes primarily from the 19th-century German
+philosopher <strong>Friedrich Nietzsche</strong>.</p>
+<div class="famous-figure">
+<p><strong>Friedrich Nietzsche (1844–1900)</strong></p>
+<p>A profound and controversial German philosopher known for his
+critique of traditional religion, morality, and culture. His ideas
+deeply influenced existentialism, modern psychology, and
+postmodernism.</p>
+<p><em>Key works:</em> <em>On the Genealogy of Morality</em>, <em>Beyond
+Good and Evil</em>, <em>Thus Spoke Zarathustra</em></p>
+<p><em>Relevance to IT ethics:</em> Nietzsche argued that much of what
+society calls “virtue” is actually just “herd morality”—rules designed
+by the weak to keep the strong and creative in check. In the tech
+context, his thought challenges whether “safe,” “aligned,” and
+“friendly” AI really just translates to “sterile,” “predictable,” and
+“mediocre.”</p>
+</div>
+<p>Nietzsche completely rejected the Aristotelian idea of an objective,
+universal path to flourishing. He argued that throughout history,
+different classes have invented moralities to serve their own interests.
+Most profoundly, he diagnosed traditional Western morality (heavily
+influenced by Christianity) as <strong>herd morality</strong>. “Virtues”
+like meekness, patience, self-sacrifice, and equality were, in his view,
+mechanisms invented by the weak to tame the exceptional, to make humans
+predictable, harmless, and easy to govern <span class="citation"
+data-cites="nietzsche1998genealogy">(Nietzsche 1998)</span>.</p>
+<p>A Nietzschean critique of modern technology—particularly Artificial
+Intelligence—is radically different from the others we have explored.
+When tech companies talk about “AI Alignment,” “Trust and Safety,” or
+making sure AI is “helpful, honest, and harmless,” a Nietzschean would
+ask: <em>Helpful to whom? Harmless to what?</em></p>
+<p>From this view, the massive corporate efforts to align AI with human
+“values” are just modern attempts to enforce herd morality. By making AI
+polite, cautious, and universally inoffensive, we might be neutralizing
+its potential to be truly disruptive, creative, or great. We are
+programming chatbots to speak with the bland, bureaucratic voice of an
+HR department, terrified of taking risks or articulating dangerous but
+necessary artistic truths.</p>
+<p>While few people identify entirely as Nietzscheans today, this
+critique hits a raw nerve in the modern AI debate. It forces us to
+confront whether our obsession with “safety,” “digital wellness,” and
+“virtue” is actually about human flourishing, or if it is merely a
+desire for predictability, control, and conformity.</p>
+</section>
+<section id="discussion-questions-1" class="level2" data-number="2.8">
+<h2 data-number="2.8"><span class="header-section-number">2.8</span>
+Discussion Questions</h2>
+<div class="discussion-questions">
+<ol type="1">
+<li>Should schools use web-filtering software to block distracting
+websites to help students build the virtue of focus, or does that
+deprive students of the chance to practice self-control in the face of
+real temptation?</li>
+<li>Aristotle believed virtues are built through practice. If a
+generative AI writes polite, empathetic-sounding emails on your behalf,
+are you becoming more empathetic, or are you losing the capacity to
+express empathy yourself?</li>
+<li>How would Isaiah Berlin (the classical liberal) and Friedrich
+Nietzsche respond differently to a government proposal to ban
+algorithmic infinite-scrolling feeds?</li>
+</ol>
+</div>
+</section>
+<section id="summary-1" class="level2" data-number="2.9">
+<h2 data-number="2.9"><span class="header-section-number">2.9</span>
+Summary</h2>
+<div class="chapter-summary">
+<p>Virtue ethics approaches technology by asking not what the rules are,
+but how our tools shape our character and habits. Traditions from
+Aristotle to Buddhism to Care Ethics offer different visions of human
+flourishing, but they share the belief that our environment actively
+trains us to be certain kinds of people. Critics argue that commercial
+IT infrastructure, designed to maximize engagement and remove friction,
+systematically degrades intellectual, conversational, and psychological
+virtues. However, using technology to enforce “virtuous” behavior raises
+serious philosophical pushback. Classical liberals warn that
+paternalistic tech design violates our negative liberty by imposing one
+group’s vision of the “good life” on everyone. More radically,
+Nietzschean critics suggest that tech industry efforts to make
+algorithms “safe” and “virtuous” are merely ways to enforce conformity
+and suppress disruptive greatness. Ultimately, judging the ethics of
+technology requires us to decide what kind of people we are trying to
+become.</p>
+</div>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="list">
+<div id="ref-arendt1951origins" class="csl-entry" role="listitem">
+Arendt, Hannah. 1951. <em>The Origins of Totalitarianism</em>. Harcourt,
+Brace; Company.
+</div>
+<div id="ref-acm2018code" class="csl-entry" role="listitem">
+Association for Computing Machinery. 2018. <em><span>ACM</span> Code of
+Ethics and Professional Conduct</em>. <a
+href="https://www.acm.org/code-of-ethics"
+class="uri">Https://www.acm.org/code-of-ethics</a>. <a
+href="https://www.acm.org/code-of-ethics">https://www.acm.org/code-of-ethics</a>.
+</div>
+<div id="ref-berlin1969two" class="csl-entry" role="listitem">
+Berlin, Isaiah. 1969. <em>Four Essays on Liberty</em>. Oxford University
+Press.
+</div>
+<div id="ref-biden2023eo" class="csl-entry" role="listitem">
+Biden, Joseph R. 2023. <em>Executive Order 14110: Safe, Secure, and
+Trustworthy Development and Use of Artificial Intelligence</em>. The
+White House. <a
+href="https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence">https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence</a>.
+</div>
+<div id="ref-carr2011shallows" class="csl-entry" role="listitem">
+Carr, Nicholas. 2011. <em>The Shallows: What the Internet Is Doing to
+Our Brains</em>. W. W. Norton &amp; Company.
+</div>
+<div id="ref-confucius2003analects" class="csl-entry" role="listitem">
+Confucius. 2003. <em>Analects</em>. Translated by Edward Slingerland.
+Hackett Publishing.
+</div>
+<div id="ref-eisenstein1979printing" class="csl-entry" role="listitem">
+Eisenstein, Elizabeth L. 1979. <em>The Printing Press as an Agent of
+Change</em>. Cambridge University Press.
+</div>
+<div id="ref-eu2024aiact" class="csl-entry" role="listitem">
+European Union. 2024. <em>Regulation (EU) 2024/1689 of the European
+Parliament and of the Council of 13 June 2024 Laying down Harmonised
+Rules on Artificial Intelligence (Artificial Intelligence Act)</em>. <a
+href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">https://eur-lex.europa.eu/eli/reg/2024/1689/oj</a>.
+</div>
+<div id="ref-haidt2024anxious" class="csl-entry" role="listitem">
+Haidt, Jonathan. 2024. <em>The Anxious Generation: How the Great
+Rewiring of Childhood Is Causing an Epidemic of Mental Illness</em>.
+Penguin Press.
+</div>
+<div id="ref-jobin2019global" class="csl-entry" role="listitem">
+Jobin, Anna, Marcello Ienca, and Effy Vayena. 2019. <span>“The Global
+Landscape of AI Ethics Guidelines.”</span> <em>Nature Machine
+Intelligence</em> 1 (9): 389–99. <a
+href="https://doi.org/10.1038/s42256-019-0088-2">https://doi.org/10.1038/s42256-019-0088-2</a>.
+</div>
+<div id="ref-keown2001nature" class="csl-entry" role="listitem">
+Keown, Damien. 2001. <em>The Nature of Buddhist Ethics</em>. Palgrave
+Macmillan.
+</div>
+<div id="ref-marx1978germanideology" class="csl-entry" role="listitem">
+Marx, Karl, and Friedrich Engels. 1978. <span>“The German
+Ideology.”</span> In <em>The Marx-Engels Reader</em>, edited by Robert
+C. Tucker. W. W. Norton &amp; Company.
+</div>
+<div id="ref-mill1859liberty" class="csl-entry" role="listitem">
+Mill, John Stuart. 1859. <em>On Liberty</em>. John W. Parker; Son.
+</div>
+<div id="ref-nietzsche1998genealogy" class="csl-entry" role="listitem">
+Nietzsche, Friedrich. 1998. <em>On the Genealogy of Morality</em>.
+Translated by Maudemarie Clark and Alan J. Swensen. Hackett Publishing.
+</div>
+<div id="ref-noddings2013caring" class="csl-entry" role="listitem">
+Noddings, Nel. 2013. <em>Caring: A Relational Approach to Ethics and
+Moral Education</em>. University of California Press.
+</div>
+<div id="ref-orwell1949nineteen" class="csl-entry" role="listitem">
+Orwell, George. 1949. <em>Nineteen Eighty-Four</em>. Secker &amp;
+Warburg.
+</div>
+<div id="ref-plato1997phaedrus" class="csl-entry" role="listitem">
+Plato. 1997. <span>“Phaedrus.”</span> In <em>Plato: Complete Works</em>,
+edited by John M. Cooper and D. S. Hutchinson. Hackett Publishing.
+</div>
+<div id="ref-postman1992technopoly" class="csl-entry" role="listitem">
+Postman, Neil. 1992. <em>Technopoly: The Surrender of Culture to
+Technology</em>. Alfred A. Knopf.
+</div>
+<div id="ref-standage1998victorian" class="csl-entry" role="listitem">
+Standage, Tom. 1998. <em>The Victorian Internet</em>. Walker &amp;
+Company.
+</div>
+<div id="ref-turkle2015reclaiming" class="csl-entry" role="listitem">
+Turkle, Sherry. 2015. <em>Reclaiming Conversation: The Power of Talk in
+a Digital Age</em>. Penguin Press.
+</div>
+<div id="ref-vallor2016technology" class="csl-entry" role="listitem">
+Vallor, Shannon. 2016. <em>Technology and the Virtues: A Philosophical
+Guide to a Future Worth Wanting</em>. Oxford University Press.
+</div>
+<div id="ref-weidinger2022taxonomy" class="csl-entry" role="listitem">
+Weidinger, Laura, Jonathan Uesato, Maribeth Rauh, et al. 2022.
+<span>“Taxonomy of Risks Posed by Language Models.”</span>
+<em>Proceedings of the 2022 ACM Conference on Fairness, Accountability,
+and Transparency</em>, 214–29.
+</div>
+</div>
+</section>
+</section>
+</body>
+</html>

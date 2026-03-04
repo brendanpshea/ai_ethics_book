@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="[Author Name]" />
+  <title>Computing and AI Ethics</title>
+  <style>
+    div.sitenav { display: flex; flex-direction: row; flex-wrap: wrap; }
+    span.navlink { flex: 1; }
+    span.navlink-label { display: inline-block; min-width: 4em; }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="styles/book.css" />
+  <script src="assets/vendor/mermaid.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      if (!window.mermaid) {
+        return;
+      }
+
+      mermaid.initialize({
+        startOnLoad: false,
+        theme: "default",
+        securityLevel: "loose"
+      });
+
+      const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");
+      for (const block of blocks) {
+        const source = block.textContent || "";
+        try {
+          await mermaid.parse(source);
+        } catch (error) {
+          block.classList.add("mermaid-error");
+          const message = document.createElement("div");
+          message.className = "mermaid-error-message";
+          message.textContent = `Mermaid syntax error: ${error?.message || error}`;
+          block.insertAdjacentElement("afterend", message);
+        }
+      }
+
+      await mermaid.run({ querySelector: "pre.mermaid, div.mermaid" });
+    });
+  </script>
+</head>
+<body>
+<nav id="sitenav">
+<div class="sitenav">
+<span class="navlink">
+</span>
+<span class="navlink">
+</span>
+</div>
+<div class="sitenav">
+<span class="navlink">
+<span class="navlink-label">Next:</span> <a href="1-chapter-01-a-short-history-of-it-ethics.html" accesskey="n" rel="next">Chapter 01: A Short History of IT Ethics</a>
+</span>
+<span class="navlink">
+</span>
+</div>
+</nav>
+<header id="title-block-header">
+<h1 class="title">Computing and AI Ethics</h1>
+<p class="author">[Author Name]</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#chapter-01-a-short-history-of-it-ethics"
+id="toc-chapter-01-a-short-history-of-it-ethics"><span
+class="toc-section-number">1</span> Chapter 01: A Short History of IT
+Ethics</a>
+<ul>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#learning-outcomes"
+id="toc-learning-outcomes"><span class="toc-section-number">1.1</span>
+Learning Outcomes</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#essential-question"
+id="toc-essential-question"><span class="toc-section-number">1.2</span>
+Essential Question</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#what-counts-as-an-information-technology-revolution"
+id="toc-what-counts-as-an-information-technology-revolution"><span
+class="toc-section-number">1.3</span> What counts as an information
+technology revolution?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#what-did-socrates-and-plato-fear-about-writing"
+id="toc-what-did-socrates-and-plato-fear-about-writing"><span
+class="toc-section-number">1.4</span> What did Socrates and Plato fear
+about writing?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#how-did-the-printing-press-produce-both-emancipation-and-catastrophe"
+id="toc-how-did-the-printing-press-produce-both-emancipation-and-catastrophe"><span
+class="toc-section-number">1.5</span> How did the printing press produce
+both emancipation and catastrophe?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#did-the-telegraph-liberate-communicationor-extend-empire"
+id="toc-did-the-telegraph-liberate-communicationor-extend-empire"><span
+class="toc-section-number">1.6</span> Did the telegraph liberate
+communication—or extend empire?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#how-did-radio-and-television-become-tools-of-mass-propagandaand-mass-murder"
+id="toc-how-did-radio-and-television-become-tools-of-mass-propagandaand-mass-murder"><span
+class="toc-section-number">1.7</span> How did radio and television
+become tools of mass propaganda—and mass murder?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#what-does-history-tell-us-to-do-about-ai"
+id="toc-what-does-history-tell-us-to-do-about-ai"><span
+class="toc-section-number">1.8</span> What does history tell us to do
+about AI?</a></li>
+<li><a
+href="1-chapter-01-a-short-history-of-it-ethics.html#discussion-questions"
+id="toc-discussion-questions"><span
+class="toc-section-number">1.9</span> Discussion Questions</a></li>
+<li><a href="1-chapter-01-a-short-history-of-it-ethics.html#summary"
+id="toc-summary"><span class="toc-section-number">1.10</span>
+Summary</a></li>
+</ul></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#chapter-02-technology-and-the-virtues"
+id="toc-chapter-02-technology-and-the-virtues"><span
+class="toc-section-number">2</span> Chapter 02: Technology and the
+Virtues</a>
+<ul>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#learning-outcomes-1"
+id="toc-learning-outcomes-1"><span class="toc-section-number">2.1</span>
+Learning Outcomes</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#essential-question-1"
+id="toc-essential-question-1"><span
+class="toc-section-number">2.2</span> Essential Question</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#what-does-it-mean-to-live-a-good-life"
+id="toc-what-does-it-mean-to-live-a-good-life"><span
+class="toc-section-number">2.3</span> What does it mean to live a “Good
+Life”?</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#are-there-other-ways-to-think-about-virtue"
+id="toc-are-there-other-ways-to-think-about-virtue"><span
+class="toc-section-number">2.4</span> Are there other ways to think
+about virtue?</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#do-our-devices-make-us-shallow-isolated-and-anxious"
+id="toc-do-our-devices-make-us-shallow-isolated-and-anxious"><span
+class="toc-section-number">2.5</span> Do our devices make us shallow,
+isolated, and anxious?</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#what-is-the-danger-of-enforcing-the-good"
+id="toc-what-is-the-danger-of-enforcing-the-good"><span
+class="toc-section-number">2.6</span> What is the danger of enforcing
+“the Good”?</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#are-the-virtues-just-tools-for-conformity"
+id="toc-are-the-virtues-just-tools-for-conformity"><span
+class="toc-section-number">2.7</span> Are the “virtues” just tools for
+conformity?</a></li>
+<li><a
+href="2-chapter-02-technology-and-the-virtues.html#discussion-questions-1"
+id="toc-discussion-questions-1"><span
+class="toc-section-number">2.8</span> Discussion Questions</a></li>
+<li><a href="2-chapter-02-technology-and-the-virtues.html#summary-1"
+id="toc-summary-1"><span class="toc-section-number">2.9</span>
+Summary</a></li>
+</ul></li>
+</ul>
+</nav>
+
+</body>
+</html>
