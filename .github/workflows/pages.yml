@@ -35,9 +35,6 @@ jobs:
       - name: Build HTML
         run: npm run build:html
 
-      - name: Create Pages entrypoint
-        run: cp dist/book.html dist/index.html
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

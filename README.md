@@ -109,7 +109,7 @@ npm run build
 ```
 
 Generated files are written to `dist/`.
-The HTML build also copies `styles/book.css` to `dist/styles/book.css` (and mirrors `assets/` into `dist/assets/`) so styling works in local preview and GitHub Pages.
+The HTML build generates a chunked web book (chapter-per-page with TOC/navigation), writes `dist/index.html` as the entrypoint, and copies `styles/book.css` to `dist/styles/book.css` (with `assets/` mirrored into `dist/assets/`).
 
 ## Preview in Codespaces
 
@@ -119,7 +119,7 @@ Recommended local preview:
 python3 -m http.server 8000 --directory dist
 ```
 
-Then open port `8000` in Codespaces and load `/book.html`.
+Then open port `8000` in Codespaces and load `/index.html`.
 
 ## Troubleshooting
 
@@ -146,7 +146,7 @@ On push to `main`, the workflow:
 
 1. installs dependencies,
 2. lints markdown,
-3. builds `dist/book.html`,
+3. builds chunked HTML with `dist/index.html` as the entrypoint,
 4. publishes `dist/` to GitHub Pages.
 
 ## AI Use Transparency

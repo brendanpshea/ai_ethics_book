@@ -7,7 +7,7 @@ Use these patterns so CSS styling is applied consistently by class selectors.
 1. `# Chapter NN: Title`
 2. `## Learning Outcomes` with `::: {.learning-outcomes}`
 3. `## Essential Question` with `::: {.essential-question}`
-4. 5–8 subsection blocks, each as `## Section X: [Question?]`
+4. 5–8 subsection blocks, each as `## [Question?]`
 5. Under each section heading, include `::: {.section-question}` with the question.
 6. `## Discussion Questions` with `::: {.discussion-questions}` (at the end of the chapter).
 7. `## Summary` with `::: {.chapter-summary}`

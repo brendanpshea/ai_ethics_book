@@ -55,12 +55,12 @@ npm run build:epub
 python3 -m http.server 8000 --directory dist
 ```
 
-Open port `8000` and visit `/book.html`.
+Open port `8000` and visit `/index.html`.
 
 ## Pre-PR Checklist
 
 - [ ] `npm run lint` passes.
-- [ ] `npm run build:html` succeeds and output looks correct in `dist/book.html`.
+- [ ] `npm run build:html` succeeds and output looks correct in `dist/index.html`.
 - [ ] `npm run build:epub` succeeds (if chapter/content changed).
 - [ ] New citations are added to `refs/references.bib` and render correctly.
 - [ ] New Mermaid diagrams render without syntax errors.

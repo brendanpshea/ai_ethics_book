@@ -5,7 +5,6 @@ lint:
 
 html:
 	./scripts/build-html.sh --toc --standalone
-	ls -l dist/ > test.out
 
 epub:
 	./scripts/build-epub.sh

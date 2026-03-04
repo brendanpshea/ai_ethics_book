@@ -22,7 +22,7 @@ mapfile -t CHAPTERS < pandoc/chapter-order.txt
 rm -rf dist
 
 # Run pandoc for chunked HTML output (outputs directly into the dist/ directory)
-"${PANDOC_CMD[@]}" --defaults pandoc/html.yaml -t chunkedhtml "${CHAPTERS[@]}" -o dist/ --split-level=1
+"${PANDOC_CMD[@]}" --defaults pandoc/html.yaml -t chunkedhtml "$@" "${CHAPTERS[@]}" -o dist/ --split-level=1
 
 # Now copy assets and styles since dist/ has been created by pandoc
 mkdir -p dist/styles
