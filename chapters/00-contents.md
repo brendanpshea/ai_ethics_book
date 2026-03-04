@@ -2,13 +2,14 @@
 
 This is the living contents file. Update chapter and subsection titles as the project evolves.
 
-## Chapter 01: What Is Computing and AI Ethics?
+## Chapter 01: A Short History of IT Ethics
 
-1. What makes a computing decision an ethical decision?
-2. Why is AI ethics distinct from, yet connected to, general ethics?
-3. Which stakeholders are affected by digital systems?
-4. How do values become embedded in technical design?
-5. What does responsible practice look like for students and professionals?
+1. What counts as an information technology revolution?
+2. What did Socrates and Plato fear about writing?
+3. How did the printing press produce both emancipation and harm?
+4. Did telegraphy and industrial communication liberate speech—or consolidate power?
+5. Why did Orwell and Arendt treat mass media as politically dangerous?
+6. How should this history shape AI ethics now?
 
 ## Chapter 02: A Short History of Technology Ethics
 

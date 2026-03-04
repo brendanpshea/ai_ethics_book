@@ -137,6 +137,8 @@ blockquote {
 .case-study,
 .discussion-questions,
 .chapter-summary,
+.argument,
+.famous-figure,
 .endnotes-note {
   border: 1px solid var(--border);
   border-left-width: 6px;
@@ -174,6 +176,37 @@ blockquote {
 .chapter-summary {
   background: var(--summary);
   border-left-color: #8b5cf6;
+}
+
+.argument {
+  background: #fff8f0;
+  border-left-color: #ea580c;
+}
+
+.argument ol {
+  margin: 0.4rem 0 0.6rem 1.2rem;
+  padding: 0;
+}
+
+.argument ul {
+  margin: 0.4rem 0 0 1.2rem;
+  padding: 0;
+}
+
+.argument .conclusion {
+  font-weight: 600;
+  margin-top: 0.3rem;
+}
+
+.famous-figure {
+  background: #f0f9ff;
+  border-left-color: #0284c7;
+}
+
+.famous-figure strong:first-child {
+  display: block;
+  font-size: 1.08rem;
+  margin-bottom: 0.3rem;
 }
 
 .endnotes-note {

@@ -1,4 +1,4 @@
-from: markdown+smart+fenced_divs+bracketed_spans+footnotes
+from: markdown+smart+fenced_divs+bracketed_spans+footnotes+pipe_tables+table_captions+raw_html
 to: epub3
 standalone: true
 css:

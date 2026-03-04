@@ -1,24 +1,30 @@
-<script type="module">
-  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
-  mermaid.initialize({
-    startOnLoad: false,
-    theme: "default",
-    securityLevel: "loose"
-  });
-
-  const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");
-  for (const block of blocks) {
-    const source = block.textContent || "";
-    try {
-      await mermaid.parse(source);
-    } catch (error) {
-      block.classList.add("mermaid-error");
-      const message = document.createElement("div");
-      message.className = "mermaid-error-message";
-      message.textContent = `Mermaid syntax error: ${error?.message || error}`;
-      block.insertAdjacentElement("afterend", message);
+<script src="assets/vendor/mermaid.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", async () => {
+    if (!window.mermaid) {
+      return;
     }
-  }
 
-  await mermaid.run({ querySelector: "pre.mermaid, div.mermaid" });
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: "default",
+      securityLevel: "loose"
+    });
+
+    const blocks = document.querySelectorAll("pre.mermaid, div.mermaid");
+    for (const block of blocks) {
+      const source = block.textContent || "";
+      try {
+        await mermaid.parse(source);
+      } catch (error) {
+        block.classList.add("mermaid-error");
+        const message = document.createElement("div");
+        message.className = "mermaid-error-message";
+        message.textContent = `Mermaid syntax error: ${error?.message || error}`;
+        block.insertAdjacentElement("afterend", message);
+      }
+    }
+
+    await mermaid.run({ querySelector: "pre.mermaid, div.mermaid" });
+  });
 </script>

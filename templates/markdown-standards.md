@@ -12,6 +12,8 @@ Use these patterns so CSS styling is applied consistently by class selectors.
 6. `## Case Study` with `::: {.case-study}`
 7. `## Discussion Questions` with `::: {.discussion-questions}`
 8. `## Summary` with `::: {.chapter-summary}`
+9. Include distributed discussion prompts inside sections (not only at chapter end).
+10. Include at least 1–3 in-section mini case studies where content naturally calls for application.
 
 ## Citation Rules
 
@@ -45,3 +47,5 @@ Use these patterns so CSS styling is applied consistently by class selectors.
 
 - Each subsection target length: 500–800 words.
 - Keep subsection title in question form when possible.
+- Use bulleted or numbered lists when they improve clarity, or to break up log blocks of text.
+- Prefer source-anchored quotes (with attribution) for key historical or conceptual claims.

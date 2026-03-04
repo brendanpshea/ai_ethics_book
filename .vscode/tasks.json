@@ -1,0 +1,19 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Serve dist/",
+      "type": "shell",
+      "command": "python3 -m http.server 8080 --directory dist",
+      "isBackground": true,
+      "problemMatcher": []
+    },
+    {
+      "label": "Build HTML",
+      "type": "shell",
+      "command": "make html",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
