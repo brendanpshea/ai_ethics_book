@@ -17,56 +17,88 @@ By the end of this chapter, readers will be able to:
 How should we think ethically about [chapter-level question]?
 :::
 
-## Section 1: [Question-form subsection title]
+## [Question-form subsection title]
 
 ::: {.section-question}
 Question: [Clear, answerable question for this subsection]
 :::
 
-[500–800 words of content here. Cite sources like @key.]
+[500–800 words of content here. Cite sources like @key. Introduce key thinkers with famous-figure blocks.]
 
-## Section 2: [Question-form subsection title]
+::: {.famous-figure}
+**Name (Birth–Death Year)**
 
-::: {.section-question}
-Question: [Clear, answerable question for this subsection]
+Brief biography.
+
+*Key works:* Title 1, Title 2
+*Relevance to IT ethics:* Why this person matters to the topic.
 :::
 
-[500–800 words of content here. Cite sources like @key.]
-
-## Section 3: [Question-form subsection title]
-
-::: {.section-question}
-Question: [Clear, answerable question for this subsection]
-:::
-
-[500–800 words of content here. Cite sources like @key.]
-
-## Section 4: [Question-form subsection title]
-
-::: {.section-question}
-Question: [Clear, answerable question for this subsection]
-:::
-
-[500–800 words of content here. Cite sources like @key.]
-
-## Section 5: [Question-form subsection title]
-
-::: {.section-question}
-Question: [Clear, answerable question for this subsection]
-:::
-
-[500–800 words of content here. Cite sources like @key.]
-
-## Case Study
+[Continue text...]
 
 ::: {.case-study}
-**Case:** [Brief case title]
+**Mini Case: [Brief case title]**
 
-- Context:
-- Stakeholders:
-- Ethical tension:
-- Questions for analysis:
+[Narrative description of the case.]
+
+*Question for analysis? Question 2?*
 :::
+
+## [Question-form subsection title]
+
+::: {.section-question}
+Question: [Clear, answerable question for this subsection]
+:::
+
+[Text introducing an important point of debate...]
+
+::: {.argument}
+**Argument: [Name of the Argument]**
+
+**Standard Form:**
+
+1. [Premise 1]
+2. [Premise 2]
+3. [Conclusion]
+
+**Common Criticisms:**
+
+- *Criticism 1:* [Explanation]
+- *Criticism 2:* [Explanation]
+:::
+
+[Continue text...]
+
+::: {.discussion-questions}
+**Discussion**
+
+1. [Question 1 related to this section]
+2. [Question 2 related to this section]
+:::
+
+## [Question-form subsection title]
+
+::: {.section-question}
+Question: [Clear, answerable question for this subsection]
+:::
+
+[500–800 words of content here. Cite sources like @key.]
+
+## [Question-form subsection title]
+
+::: {.section-question}
+Question: [Clear, answerable question for this subsection]
+:::
+
+[500–800 words of content here. Cite sources like @key.]
+
+## [Question-form subsection title]
+
+::: {.section-question}
+Question: [Clear, answerable question for this subsection]
+:::
+
+[500–800 words of content here. Cite sources like @key.]
 
 ## Discussion Questions
 

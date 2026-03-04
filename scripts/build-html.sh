@@ -2,14 +2,6 @@
 set -euo pipefail
 
 ./tools/download-csl.sh
-mkdir -p dist
-mkdir -p dist/styles
-
-cp styles/book.css dist/styles/book.css
-if [[ -d assets ]]; then
-  rm -rf dist/assets
-  cp -R assets dist/assets
-fi
 
 if ! command -v docker >/dev/null 2>&1; then
   echo "Docker is required for builds in this project."
@@ -25,6 +17,19 @@ if [[ ! -s pandoc/chapter-order.txt ]]; then
 fi
 
 mapfile -t CHAPTERS < pandoc/chapter-order.txt
-"${PANDOC_CMD[@]}" --defaults pandoc/html.yaml "${CHAPTERS[@]}" -o dist/book.html
 
-echo "HTML build complete: dist/book.html"
+# Remove dist directory entirely so pandoc can create it
+rm -rf dist
+
+# Run pandoc for chunked HTML output (outputs directly into the dist/ directory)
+"${PANDOC_CMD[@]}" --defaults pandoc/html.yaml -t chunkedhtml "${CHAPTERS[@]}" -o dist/ --split-level=1
+
+# Now copy assets and styles since dist/ has been created by pandoc
+mkdir -p dist/styles
+cp styles/book.css dist/styles/book.css
+
+if [[ -d assets ]]; then
+  cp -R assets dist/assets
+fi
+
+echo "HTML build complete: dist/"

@@ -1,5 +1,5 @@
 from: markdown+smart+fenced_divs+bracketed_spans+footnotes+pipe_tables+table_captions+raw_html
-to: html5
+to: chunkedhtml
 standalone: true
 embed-resources: false
 css:

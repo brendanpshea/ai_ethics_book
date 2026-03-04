@@ -4,7 +4,8 @@ lint:
 	npm run lint
 
 html:
-	./scripts/build-html.sh
+	./scripts/build-html.sh --toc --standalone
+	ls -l dist/ > test.out
 
 epub:
 	./scripts/build-epub.sh

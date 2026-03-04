@@ -18,7 +18,7 @@ By the end of this chapter, readers will be able to:
 What does the history of information technology teach us about the ethical challenges of AI today?
 :::
 
-## Section 1: What counts as an information technology revolution?
+## What counts as an information technology revolution?
 
 ::: {.section-question}
 Question: Why treat writing, printing, telegraphy, mass media, and the web as one ethical story?
@@ -66,7 +66,7 @@ Table: Five information technology revolutions and their real-world consequences
 2. Is the most important ethical question about a technology *what it can do*, or *who controls it*?
 :::
 
-## Section 2: What did Socrates and Plato fear about writing?
+## What did Socrates and Plato fear about writing?
 
 ::: {.section-question}
 Question: Is writing a memory aid---or a technology that weakens the mind?
@@ -157,7 +157,7 @@ flowchart LR
   <figcaption>Figure 1. A recurring cycle in the history of information technology ethics.</figcaption>
 </figure>
 
-## Section 3: How did the printing press produce both emancipation and catastrophe?
+## How did the printing press produce both emancipation and catastrophe?
 
 ::: {.section-question}
 Question: Why did the same technology that enabled the Scientific Revolution also fuel religious wars and witch hunts?
@@ -211,7 +211,7 @@ Today the gap is measured in months, not decades. AI systems capable of generati
 2. The *Malleus Maleficarum* was a bestseller. Does popularity say anything about whether content is harmful? What does that suggest about content recommendation algorithms?
 :::
 
-## Section 4: Did the telegraph liberate communication---or extend empire?
+## Did the telegraph liberate communication---or extend empire?
 
 ::: {.section-question}
 Question: What can Mill and Marx teach us about who actually benefits when communication speeds up?
@@ -310,7 +310,7 @@ flowchart LR
 2. Mill says even bad ideas deserve a hearing. Does that argument hold the same way when one platform can amplify a single message to a billion people?
 :::
 
-## Section 5: How did radio and television become tools of mass propaganda---and mass murder?
+## How did radio and television become tools of mass propaganda---and mass murder?
 
 ::: {.section-question}
 Question: What happens when one voice can reach every home at once?
@@ -381,7 +381,7 @@ The platform has three options, none clean. Remove the clip immediately and risk
 2. Arendt argues that propaganda works best on people who are isolated and searching for belonging. Does that apply to how social media recommendation algorithms work today?
 :::
 
-## Section 6: What does history tell us to do about AI?
+## What does history tell us to do about AI?
 
 ::: {.section-question}
 Question: What responsibilities follow if every information revolution repeats familiar trade-offs?

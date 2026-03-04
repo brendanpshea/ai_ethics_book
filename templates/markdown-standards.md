@@ -9,11 +9,18 @@ Use these patterns so CSS styling is applied consistently by class selectors.
 3. `## Essential Question` with `::: {.essential-question}`
 4. 5–8 subsection blocks, each as `## Section X: [Question?]`
 5. Under each section heading, include `::: {.section-question}` with the question.
-6. `## Case Study` with `::: {.case-study}`
-7. `## Discussion Questions` with `::: {.discussion-questions}`
-8. `## Summary` with `::: {.chapter-summary}`
-9. Include distributed discussion prompts inside sections (not only at chapter end).
-10. Include at least 1–3 in-section mini case studies where content naturally calls for application.
+6. `## Discussion Questions` with `::: {.discussion-questions}` (at the end of the chapter).
+7. `## Summary` with `::: {.chapter-summary}`
+8. Include distributed discussion prompts inside sections (`::: {.discussion-questions}`) rather than just at chapter end.
+9. Include at least 1–3 in-section mini case studies (`::: {.case-study}`) where content naturally calls for application.
+
+## Special Content Blocks
+
+In addition to standard structural blocks, deeply integrate the following elements:
+
+- **Famous Figures:** Use `::: {.famous-figure}` to introduce key philosophers, thinkers, or technologists. Include birth/death years, a brief bio, key works, and specific relevance to IT ethics.
+- **Formal Arguments:** Use `::: {.argument}` to lay out key philosophical arguments in "Standard Form" (numbered premises leading to a conclusion) and follow it with "Common Criticisms".
+- **Mini-Cases:** Use `::: {.case-study}` within sections to present narrow, targeted "Mini Cases" with italics at the end for reflection questions.
 
 ## Citation Rules
 

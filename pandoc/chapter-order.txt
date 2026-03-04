@@ -1,1 +1,2 @@
 chapters/01-what-is-computing-and-ai-ethics.md
+chapters/02-technology-and-the-virtues.md

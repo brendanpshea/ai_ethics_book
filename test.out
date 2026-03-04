@@ -1,0 +1,7 @@
+total 120
+-rw-rw-rw-  1 root      root      56155 Mar  4 02:55 1-chapter-01-a-short-history-of-it-ethics.html
+-rw-rw-rw-  1 root      root      38154 Mar  4 02:55 2-chapter-02-technology-and-the-virtues.html
+drwxr-xr-x+ 5 codespace codespace  4096 Mar  4 02:55 assets
+-rw-rw-rw-  1 root      root       7717 Mar  4 02:55 index.html
+-rw-rw-rw-  1 root      root       5202 Mar  4 02:55 sitemap.json
+drwxrwxrwx+ 2 codespace codespace  4096 Mar  4 02:55 styles
